@@ -39,11 +39,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  17 .debug_line   0000ae9b  00000000  00000000  00056046  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    000cfe04  00000000  00000000  00060ee1  2**0
+ 18 .debug_str    000cfe4e  00000000  00000000  00060ee1  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  00130ce5  2**0
+ 19 .comment      0000007b  00000000  00000000  00130d2f  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000393c  00000000  00000000  00130d60  2**2
+ 20 .debug_frame  0000393c  00000000  00000000  00130dac  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -631,14 +631,14 @@ uint8_t gen_crc(uint8_t *data, uint8_t len, uint8_t crc_given){
  80006d6:	70fb      	strb	r3, [r7, #3]
  80006d8:	4613      	mov	r3, r2
  80006da:	70bb      	strb	r3, [r7, #2]
-    uint8_t crc = 0xff;
- 80006dc:	23ff      	movs	r3, #255	; 0xff
+    uint8_t crc = 0x00;
+ 80006dc:	2300      	movs	r3, #0
  80006de:	73fb      	strb	r3, [r7, #15]
     uint8_t i, j;
     for (i = 0; i < len; i++) {
  80006e0:	2300      	movs	r3, #0
  80006e2:	73bb      	strb	r3, [r7, #14]
- 80006e4:	e022      	b.n	800072c <gen_crc+0x60>
+ 80006e4:	e021      	b.n	800072a <gen_crc+0x5e>
         crc ^= data[i];
  80006e6:	7bbb      	ldrb	r3, [r7, #14]
  80006e8:	687a      	ldr	r2, [r7, #4]
@@ -650,60 +650,60 @@ uint8_t gen_crc(uint8_t *data, uint8_t len, uint8_t crc_given){
         for (j = 0; j < 8; j++) {
  80006f4:	2300      	movs	r3, #0
  80006f6:	737b      	strb	r3, [r7, #13]
- 80006f8:	e012      	b.n	8000720 <gen_crc+0x54>
+ 80006f8:	e011      	b.n	800071e <gen_crc+0x52>
             if ((crc & 0x80) != 0)
  80006fa:	f997 300f 	ldrsb.w	r3, [r7, #15]
  80006fe:	2b00      	cmp	r3, #0
- 8000700:	da08      	bge.n	8000714 <gen_crc+0x48>
+ 8000700:	da07      	bge.n	8000712 <gen_crc+0x46>
                 crc = (uint8_t)((crc << 1) ^ CRC_CHECK);
  8000702:	7bfb      	ldrb	r3, [r7, #15]
  8000704:	005b      	lsls	r3, r3, #1
  8000706:	b25b      	sxtb	r3, r3
- 8000708:	f083 0304 	eor.w	r3, r3, #4
- 800070c:	43db      	mvns	r3, r3
- 800070e:	b25b      	sxtb	r3, r3
- 8000710:	73fb      	strb	r3, [r7, #15]
- 8000712:	e002      	b.n	800071a <gen_crc+0x4e>
+ 8000708:	f083 0307 	eor.w	r3, r3, #7
+ 800070c:	b25b      	sxtb	r3, r3
+ 800070e:	73fb      	strb	r3, [r7, #15]
+ 8000710:	e002      	b.n	8000718 <gen_crc+0x4c>
             else
                 crc <<= 1;
- 8000714:	7bfb      	ldrb	r3, [r7, #15]
- 8000716:	005b      	lsls	r3, r3, #1
- 8000718:	73fb      	strb	r3, [r7, #15]
+ 8000712:	7bfb      	ldrb	r3, [r7, #15]
+ 8000714:	005b      	lsls	r3, r3, #1
+ 8000716:	73fb      	strb	r3, [r7, #15]
         for (j = 0; j < 8; j++) {
- 800071a:	7b7b      	ldrb	r3, [r7, #13]
- 800071c:	3301      	adds	r3, #1
- 800071e:	737b      	strb	r3, [r7, #13]
- 8000720:	7b7b      	ldrb	r3, [r7, #13]
- 8000722:	2b07      	cmp	r3, #7
- 8000724:	d9e9      	bls.n	80006fa <gen_crc+0x2e>
+ 8000718:	7b7b      	ldrb	r3, [r7, #13]
+ 800071a:	3301      	adds	r3, #1
+ 800071c:	737b      	strb	r3, [r7, #13]
+ 800071e:	7b7b      	ldrb	r3, [r7, #13]
+ 8000720:	2b07      	cmp	r3, #7
+ 8000722:	d9ea      	bls.n	80006fa <gen_crc+0x2e>
     for (i = 0; i < len; i++) {
- 8000726:	7bbb      	ldrb	r3, [r7, #14]
- 8000728:	3301      	adds	r3, #1
- 800072a:	73bb      	strb	r3, [r7, #14]
- 800072c:	7bba      	ldrb	r2, [r7, #14]
- 800072e:	78fb      	ldrb	r3, [r7, #3]
- 8000730:	429a      	cmp	r2, r3
- 8000732:	d3d8      	bcc.n	80006e6 <gen_crc+0x1a>
+ 8000724:	7bbb      	ldrb	r3, [r7, #14]
+ 8000726:	3301      	adds	r3, #1
+ 8000728:	73bb      	strb	r3, [r7, #14]
+ 800072a:	7bba      	ldrb	r2, [r7, #14]
+ 800072c:	78fb      	ldrb	r3, [r7, #3]
+ 800072e:	429a      	cmp	r2, r3
+ 8000730:	d3d9      	bcc.n	80006e6 <gen_crc+0x1a>
         }
     }
     if(crc_given != 0x00){
- 8000734:	78bb      	ldrb	r3, [r7, #2]
- 8000736:	2b00      	cmp	r3, #0
- 8000738:	d003      	beq.n	8000742 <gen_crc+0x76>
+ 8000732:	78bb      	ldrb	r3, [r7, #2]
+ 8000734:	2b00      	cmp	r3, #0
+ 8000736:	d003      	beq.n	8000740 <gen_crc+0x74>
     	crc ^= crc_given; //this should return 0x00 if correct
- 800073a:	7bfa      	ldrb	r2, [r7, #15]
- 800073c:	78bb      	ldrb	r3, [r7, #2]
- 800073e:	4053      	eors	r3, r2
- 8000740:	73fb      	strb	r3, [r7, #15]
+ 8000738:	7bfa      	ldrb	r2, [r7, #15]
+ 800073a:	78bb      	ldrb	r3, [r7, #2]
+ 800073c:	4053      	eors	r3, r2
+ 800073e:	73fb      	strb	r3, [r7, #15]
     }
     return crc;
- 8000742:	7bfb      	ldrb	r3, [r7, #15]
+ 8000740:	7bfb      	ldrb	r3, [r7, #15]
 }
- 8000744:	4618      	mov	r0, r3
- 8000746:	3714      	adds	r7, #20
- 8000748:	46bd      	mov	sp, r7
- 800074a:	f85d 7b04 	ldr.w	r7, [sp], #4
- 800074e:	4770      	bx	lr
+ 8000742:	4618      	mov	r0, r3
+ 8000744:	3714      	adds	r7, #20
+ 8000746:	46bd      	mov	sp, r7
+ 8000748:	f85d 7b04 	ldr.w	r7, [sp], #4
+ 800074c:	4770      	bx	lr
+	...
 
 08000750 <main>:
 /**

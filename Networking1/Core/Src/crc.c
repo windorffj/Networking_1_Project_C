@@ -9,7 +9,7 @@
 
 
 uint8_t gen_crc(uint8_t *data, uint8_t len, uint8_t crc_given){
-    uint8_t crc = 0xff;
+    uint8_t crc = 0x00;
     uint8_t i, j;
     for (i = 0; i < len; i++) {
         crc ^= data[i];

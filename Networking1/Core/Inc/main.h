@@ -84,7 +84,7 @@ void Error_Handler(void);
 #define BROADCAST 0x00
 #define CRC_YES 0x01
 #define CRC_NO 0x00
-#define CRC_CHECK 0xFB //251
+#define CRC_CHECK 0x107 //x^8 + x^2 + x + 1
 #define CRC_NOT_CHECK 0xAA //for when CRC_NO is set
 /* USER CODE END Private defines */
 
