@@ -1,0 +1,4 @@
+channel_monitor.c:10:6:cm_init	16	static
+channel_monitor.c:17:6:cm_sc_inter	16	static,ignoring_inline_asm
+channel_monitor.c:32:6:cm_tim_inter	16	static
+channel_monitor.c:47:10:cm_get_state	16	static

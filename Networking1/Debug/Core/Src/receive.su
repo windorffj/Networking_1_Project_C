@@ -1,0 +1,6 @@
+receive.c:19:6:rc_init	24	static
+receive.c:27:5:rc_receive	56	static
+receive.c:65:5:rc_timeout	24	static
+receive.c:85:5:rc_store	40	dynamic
+receive.c:119:6:rc_send	64	dynamic
+receive.c:145:6:rc_reset	16	static

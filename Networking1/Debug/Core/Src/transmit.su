@@ -1,0 +1,5 @@
+transmit.c:22:6:tm_init	24	static
+transmit.c:37:5:tm_next_byte	16	static
+transmit.c:71:6:tm_send	16	static
+transmit.c:93:6:tm_calc_next	24	static
+transmit.c:131:6:tm_change_pin	8	static
