@@ -15,16 +15,18 @@ static enum SPOT reset = MID;
 static int reset_int = 1;
 static int intermed;
 static int j;
+static uint8_t* store;
+static data_struct* rx;
 
-void rc_init(TIM_HandleTypeDef *HTIM, UART_HandleTypeDef *HUART, data_struct* rx){
+void rc_init(uint8_t* Store, TIM_HandleTypeDef *HTIM, UART_HandleTypeDef *HUART, data_struct* RX){
   htim = HTIM;
   huart = HUART;
-  i = 0;
-  j = 0;
-  rc_reset(rx);
+  rx = RX;
+  store = Store;
+  rc_reset();
 }
 
-int rc_receive(uint8_t* store, data_struct* rx){
+int rc_receive(){
 	int ret = 0;
 	if(cm_get_state() != 0x4){ //not in collision
 		ack = false;
@@ -47,7 +49,7 @@ int rc_receive(uint8_t* store, data_struct* rx){
 			}
 
 			if(bit < 0){
-				ret = rc_store(store,rx);
+				ret = rc_store();
 			}
 		}
 	} else {
@@ -57,12 +59,12 @@ int rc_receive(uint8_t* store, data_struct* rx){
 			HAL_UART_Transmit ( huart, ack_mess, strlen( (char*)ack_mess ), 1000 );
 			ack = true;
 		}
-		rc_reset(rx);
+		rc_reset();
 	}
 	return ret;
 }
 
-int rc_timeout(uint8_t* store, data_struct* rx){ //happens when there is a 1 followed by a 0 or a 0 folowed by a 1
+int rc_timeout(){ //happens when there is a 1 followed by a 0 or a 0 folowed by a 1
 
 	int ret = 0;
 	switch(sp){
@@ -75,51 +77,47 @@ int rc_timeout(uint8_t* store, data_struct* rx){ //happens when there is a 1 fol
 			intermed = midint;
 			sp = START;
 			if(intermed == 1){ //only if it is the end
-				rc_send(store, rx);
+				rc_send();
 			}
 			break;
 	}
 	return ret;
 }
 
-int rc_store(uint8_t* store, data_struct* rx){
+int rc_store(){
 	int ret = 0;
 	//store the message
-	if(i != 6){
+	if(i < 5){
 		*((uint8_t*)rx + i) = *store;
-		bit = 7;
 		i++;
-		if( i == 6 ){ //set the lngth of the data
-			//TODO: watch this
-			uint8_t temp[rx->length];
-			rx->data = (uint8_t*)&temp;
-		}
-	}else if(i == 6){
+	}else if(i == 5){
 		if((rx->dest == SOURCE) || (rx->dest == BROADCAST)){
-			*(rx->data + j) = *store;
+			rx->data[j] = (*store);
 			j++;
-			if(j == (int)rx->length){
+			if(j == rx->length){
 				i++;
 			}
 		} else {
-			//transmission is done. this is not sent to uss
+			//transmission is done. this is not sent to us
 			HAL_TIM_Base_Stop_IT(htim);
 			__HAL_TIM_SET_COUNTER(htim, 0);
-			rc_reset(rx);
+			rc_reset();
 		}
-	} else if(i == 7){
+	} else if(i == 6){
 		rx->crc = *store;
+		i++;
 	} else { //max that the total message can be
-		rc_send(store, rx);
+		rc_send();
 		ret = 1;
 	}
+	bit = 7;
 	return ret;
 }
 
-void rc_send(uint8_t* store, data_struct* rx){
+void rc_send(){
 	HAL_TIM_Base_Stop_IT(htim);
 	__HAL_TIM_SET_COUNTER(htim, 0);
-
+	char* test = store;
 	bool crc_correct = false;
 	if(rx->crcf == 0x1){
 		uint8_t crc = gen_crc(rx->data, rx->length, rx->crc);
@@ -131,22 +129,30 @@ void rc_send(uint8_t* store, data_struct* rx){
 	}
 
 	if(crc_correct){
-		char sent[17 + rx->length];
-		sprintf(sent, "From: %x\r\nTo:%x\r\n%s\r\n",rx->src, rx->dest, rx->data);
-		HAL_UART_Transmit ( huart, (uint8_t*)sent, 17 + rx->length, 1000 );
+		char sent[56 + rx->length];
+		sprintf(sent, "From: %x\r\nTo:%x\r\n%s\r\nCRC: %x\r\nLength: %x\r\nHead: %x\r\nCRCF: %x\r\n",rx->src, rx->dest, rx->data,rx->crc, rx->length, rx->pre, rx->crcf);
+		HAL_UART_Transmit ( huart, (uint8_t*)sent, 56 + rx->length, 0xFFFF );
 	} else {
 		uint8_t ack_mess[14] = "CRC Error!!!\r\n";
 		HAL_UART_Transmit ( huart, ack_mess, strlen( (char*)ack_mess ), 1000 );
 	}
 
-	rc_reset(rx);
+
+	rc_reset();
 }
 
-void rc_reset(data_struct* rx){
+void rc_reset(){
+	rx->pre = 0;
+	rx->src = 0;
+	rx->dest = 0;
+	rx->length = 0;
+	rx->crcf = 0;
+	memset(rx->data, 0, 255);
+	rx->crc = 0;
 	i = 0;
 	bit = 7; //the first thing the receiver sees is the second bit. the first bit should always be 0
 	sp = reset;
+	j = 0;
 	midint = reset_int;
 	intermed = reset_int;
-	memset(rx->data,0,rx->length);
 }

@@ -43,7 +43,7 @@ typedef struct data_struct{
 	uint8_t dest;
 	uint8_t length;
 	uint8_t crcf;
-	uint8_t* data;
+	uint8_t data[255];
 	uint8_t crc;
 }data_struct;
 
@@ -80,7 +80,7 @@ void Error_Handler(void);
 #define Transmitter_GPIO_Port GPIOC
 /* USER CODE BEGIN Private defines */
 #define SOH 0x55
-#define SOURCE 0x24 //this is me decimal 36
+#define SOURCE 0x36 //this is me
 #define BROADCAST 0x00
 #define CRC_YES 0x01
 #define CRC_NO 0x00

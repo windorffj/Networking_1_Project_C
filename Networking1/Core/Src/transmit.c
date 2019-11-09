@@ -1,7 +1,8 @@
 #include "transmit.h"
+#include <string.h>
 
-#define address_min 0x79
-#define address_max 0x7B
+#define address_min 0x00
+#define address_max 0x38
 
 GPIO_TypeDef* location;
 int Pin;
@@ -9,10 +10,8 @@ int Pin;
 enum SPOT {START, MID};
 enum SPOT sp;
 int where;
-uint8_t* Data;
 uint8_t to_send;
 int bit;
-int size;
 TIM_HandleTypeDef *htim;
 int data;
 int wait;
@@ -20,35 +19,26 @@ data_struct* tx;
 int i;
 
 void tm_init(GPIO_TypeDef* loc, int pin, TIM_HandleTypeDef *HTIM, data_struct* rx){
+	tx = rx;
 	location = loc;
 	Pin = pin;
-	size = 0;
-	bit = 0;
 	htim = HTIM;
-	data = 1;
-	wait = 2;
-	i = 0;
-	HAL_GPIO_WritePin(location,pin,data);
-	tx = rx;
-	tx->src = SOURCE;
-	tx->pre = SOH;
+	tm_reset();
 }
 
 int tm_next_byte(){
 	int ret;
-	if(where <= 6){
+	if(where < 5){
 		to_send = *((uint8_t*)tx + where);
 		where++;
-		bit = 7;
 		ret = 1;
-	} else if(where == 6){
-		to_send = *((tx->data)+i);
+	} else if(where == 5){
+		to_send = tx->data[i];
 		i++;
 		if(i == tx->length){
 			where++;
-			i = 0;
 		}
-	} else if(where == 7){
+	} else if(where == 6){
 		to_send = tx->crc;
 		where++;
 	}else {
@@ -58,22 +48,23 @@ int tm_next_byte(){
 			//stop the timer here
 			HAL_TIM_Base_Stop_IT(htim);
 			__HAL_TIM_SET_COUNTER(htim, 0);
-			HAL_GPIO_WritePin(location,Pin,1); //idle high
-			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_9,1);
+			tm_reset();
 			ret = 0;
-			wait = 2;
 		}
 	}
+	bit = 7;
 	return ret;
 }
 
 
 void tm_send(uint8_t* data, uint8_t dest){
 	sp = START;
-	tx->data = data;
+
+	tx->src = SOURCE;
+	tx->pre = SOH;
 	tx->dest = dest;
-	tx->length = strlen((char*)Data);
-	size = 7 + tx->length;
+	tx->length = strlen((char*)data);
+	strcpy((char*)tx->data, (char*)data);
 
 	tx->crcf = CRC_NO;
 	tx->crc = CRC_NOT_CHECK;
@@ -118,11 +109,9 @@ void tm_calc_next(){
 
 	} else {
 		//restart the transmission or wait until the line is idle
-		where = 0;
-		wait = 2;
-		bit = 7;
-		to_send = *(Data + where);
-		data = 1;
+		tm_reset();
+		int r = rand() % 1000; //max value of 1000. this sets our time to 1 ms with a max of 1 second
+		HAL_Delay(r);
 	}
 }
 
@@ -130,4 +119,14 @@ void tm_calc_next(){
 
 void tm_change_pin(){
 	HAL_GPIO_WritePin(location,Pin,data);
+}
+
+void tm_reset(){
+	HAL_GPIO_WritePin(location,Pin,1); //idle high
+	where = 0;
+	wait = 2;
+	bit = 7;
+	to_send = *(tx->data + where);
+	data = 1;
+	i = 0;
 }

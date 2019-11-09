@@ -6,6 +6,7 @@
 
 #include <inttypes.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdint.h>
 #include <stdint.h>
 #include <inttypes.h>
@@ -22,5 +23,6 @@ void tm_send(uint8_t* data, uint8_t dest);
 int tm_next_byte();
 void tm_change_pin();
 void tm_calc_next();
+void tm_reset();
 
 #endif

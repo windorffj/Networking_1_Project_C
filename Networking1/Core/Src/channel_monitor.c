@@ -37,7 +37,7 @@ void cm_tim_inter(int pin_status){
 			state = COLLISION;
 		}
 	} else {
-		flag = HAL_GPIO_ReadPin(location,Pin);
+		flag = pin_status;
 	}
 }
 

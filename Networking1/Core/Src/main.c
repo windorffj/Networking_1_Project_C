@@ -56,7 +56,7 @@ UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 
-char buff[255];
+char buff[259];
 static char store[1];
 static int flag;
 static bool run;
@@ -124,7 +124,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
    cm_init(GPIOC,Receiver_Pin); //set the channel monitor to watch the receive pin
    tm_init(GPIOC, Transmitter_Pin, &htim4, &tx_struct);
-   rc_init(&htim2, &huart2, &rx_struct);
+   rc_init((uint8_t*)&store, &htim2, &huart2, &rx_struct);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -142,7 +142,7 @@ int main(void)
    char buff2[ 6 ] = "\r\n>>>";
 
    HAL_UART_Transmit ( &huart2, (uint8_t*)buff2, strlen( buff2 ), 10 );
-   memset( buff, 0, 255 );
+   memset( buff, 0, 258 );
 
    HAL_TIM_Base_Start_IT(&htim3);
 
@@ -157,14 +157,13 @@ int main(void)
 		  cm_sc_inter(&htim3, (GPIOC->IDR&(1<<2))>>2);
 		  flag = 0;
 		  if(!run){
-			  rx_flag = 0; //for the reset if idle
-			  int check = rc_receive((uint8_t*)&store, &rx_struct);
+			  int check = rc_receive();
 			  if(check == 1){
 				  HAL_UART_Transmit ( &huart2, (uint8_t*)buff2, strlen( buff2 ), 10 ); //send the end of character
 			  }
+			  rx_flag = 0; //for the reset if idle
 		  }
 		  GPIO_Set_Lights();
-
 	  } else if(flag == 2){
 		  cm_tim_inter((GPIOC->IDR&(1<<2))>>2);
 		  flag = 0;
@@ -442,21 +441,23 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
   if(GPIO_Pin == Receiver_Pin)
   {
-	  flag = 1;
-	  rx_flag = 2;
+	  //if(flag == 0){
+		  flag = 1;
+		  rx_flag = 2;
 
-	  //only trigger timer start this if not receiving already
-	  if(run){
-		  HAL_TIM_Base_Start_IT(&htim2);
-		  run = false;
-	  } else {
+		  //only trigger timer start this if not receiving already
+		  if(run){
+			  HAL_TIM_Base_Start_IT(&htim2);
+			  run = false;
+		  } else {
 		  //reset the timer
-		  __disable_irq();
-		  HAL_TIM_Base_Stop_IT(&htim2);
-		  __HAL_TIM_SET_COUNTER(&htim2, 0);
-		  HAL_TIM_Base_Start_IT(&htim2);
-		  __enable_irq();
-	  }
+			  __disable_irq();
+			  HAL_TIM_Base_Stop_IT(&htim2);
+			  __HAL_TIM_SET_COUNTER(&htim2, 0);
+			  HAL_TIM_Base_Start_IT(&htim2);
+			  __enable_irq();
+		  }
+	  //}
 
   }
 }
@@ -476,7 +477,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     	tm_change_pin();
     	tx_flag = 1;
     } else if(htim->Instance == htim2.Instance){
-    	if(flag == 0 && rx_flag != 2){
+    	if(rx_flag != 2){
     		int ret = rc_timeout((uint8_t*)&store, &rx_struct);
     		if(ret == 1){
     			run = true;
@@ -489,7 +490,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 void UART_Receive(UART_HandleTypeDef *huart){
 	char buff2[ 6 ] = "\r\n>>>";
 
-	HAL_UART_Receive( huart, (uint8_t*)buff, 255, 100 );
+	HAL_UART_Receive( huart, (uint8_t*)buff, 258, 100 );
 	char point[strlen(buff)];
 	for(int i = 0; i < strlen(buff); i++){
 		point[i] = *(buff+i);
@@ -501,7 +502,7 @@ void UART_Receive(UART_HandleTypeDef *huart){
 	uint8_t* data = (uint8_t*)strtok(NULL, delim2); //get the data to the end
 
 	if(strlen((char*)dest) == 2 && strlen((char*)data) > 0){
-		char sent[31] = "OK";
+		char sent[2] = "OK";
 		HAL_UART_Transmit ( huart, (uint8_t*)sent, strlen( sent ), 1000 );
 		tm_send(data, (uint8_t)strtol((char*)dest, NULL, 16));
 	} else {
@@ -512,19 +513,17 @@ void UART_Receive(UART_HandleTypeDef *huart){
 
 	HAL_UART_Transmit ( huart, (uint8_t*)buff2, strlen( buff2 ), 10 );
 
-	memset( buff, 0, 255 ); //clear the data out.
+	memset( buff, 0, 258 ); //clear the data out.
 }
 
 void GPIO_Set_Lights(){
 	uint16_t pattern = cm_get_state(); //read the state
-	HAL_GPIO_WritePin(GPIOA,Green_Light_Pin,pattern&0x1);
+	GPIOA->ODR = pattern << 5;
 
-	HAL_GPIO_WritePin(GPIOA,Yellow_Light_Pin,pattern&0x2);
-
-	HAL_GPIO_WritePin(GPIOA,Red_Light_Pin,pattern&0x4);
-
-	if(pattern == 0x1 && rx_flag == 0){
-		rc_reset(&rx_struct);
+	if(pattern == 0x1 && rx_flag != 1){
+		HAL_TIM_Base_Stop_IT(&htim2);
+		__HAL_TIM_SET_COUNTER(&htim2, 0);
+		rc_reset();
 		rx_flag = 1; //only run this once
 	}
 }

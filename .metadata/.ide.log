@@ -2,3 +2,870 @@
 
 
 2019-11-05 12:34:06,565 [INFO] Activator:177 - !SESSION log4j initialized
+2019-11-05 18:47:11,569 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541
+2019-11-05 18:47:11,601 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/
+2019-11-05 18:47:11,610 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/boardmanager/
+2019-11-05 18:47:11,611 [INFO] DbMcus:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-05 18:47:11,611 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-05 18:47:11,614 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/mcu/
+2019-11-05 18:47:11,646 [INFO] DbMcusAds:72 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:11,649 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:11,653 [INFO] DbMcusJson:59 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:11,655 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:11,658 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:11,889 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-05 18:47:12,143 [INFO] RulesReader:52 - Compatibility file has been processed (179 Rules)
+2019-11-05 18:47:12,287 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_202
+2019-11-05 18:47:12,288 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/
+2019-11-05 18:47:12,288 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/boardmanager/
+2019-11-05 18:47:12,288 [INFO] DbMcus:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-05 18:47:12,288 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-05 18:47:12,288 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/mcu/
+2019-11-05 18:47:12,288 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,292 [INFO] DbMcusAds:72 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,292 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,292 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,292 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,293 [INFO] DbMcusJson:59 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,293 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,293 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,294 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,294 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,294 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,294 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,295 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-05 18:47:12,448 [INFO] MainPanel:185 - HeapMemory: 276824064
+2019-11-05 18:47:12,659 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/
+2019-11-05 18:47:12,660 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/boardmanager/
+2019-11-05 18:47:12,660 [INFO] DbMcus:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-05 18:47:12,660 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-05 18:47:12,661 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/mcu/
+2019-11-05 18:47:12,663 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,663 [INFO] DbMcusAds:72 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,664 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,664 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,665 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,665 [INFO] DbMcusJson:59 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,665 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,666 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,666 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,667 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-05 18:47:12,667 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,667 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\hatri\.stmcufinder\plugins\mcufinder/ => C:\Users\hatri\.stmcufinder\plugins\mcufinder
+2019-11-05 18:47:12,668 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\hatri\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-05 18:47:12,702 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541
+2019-11-05 18:47:12,706 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2019-11-05 18:47:12,711 [INFO] PluginManage:292 - Check plugin analytics
+2019-11-05 18:47:12,726 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2019-11-05 18:47:12,727 [INFO] PluginManage:292 - Check plugin clock
+2019-11-05 18:47:12,753 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2019-11-05 18:47:12,753 [INFO] PluginManage:292 - Check plugin ddr
+2019-11-05 18:47:12,760 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2019-11-05 18:47:12,760 [INFO] PluginManage:292 - Check plugin filemanager
+2019-11-05 18:47:13,025 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2019-11-05 18:47:13,025 [INFO] PluginManage:292 - Check plugin ipmanager
+2019-11-05 18:47:13,039 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2019-11-05 18:47:13,040 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2019-11-05 18:47:13,061 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2019-11-05 18:47:13,062 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2019-11-05 18:47:13,106 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2019-11-05 18:47:13,106 [INFO] PluginManage:292 - Check plugin power
+2019-11-05 18:47:13,129 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2019-11-05 18:47:13,130 [INFO] PluginManage:292 - Check plugin projectmanager
+2019-11-05 18:47:13,160 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2019-11-05 18:47:13,161 [INFO] PluginManage:292 - Check plugin thirdparty
+2019-11-05 18:47:13,236 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/hatri/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 31 ms. number of Sw pack : 9
+2019-11-05 18:47:13,297 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2019-11-05 18:47:13,297 [INFO] PluginManage:292 - Check plugin tools
+2019-11-05 18:47:13,304 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2019-11-05 18:47:13,304 [INFO] PluginManage:292 - Check plugin updater
+2019-11-05 18:47:13,329 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2019-11-05 18:47:13,330 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2019-11-05 18:47:13,679 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-05 18:47:13,851 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,851 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2019-11-05 18:47:13,858 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,859 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2019-11-05 18:47:13,866 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,867 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2019-11-05 18:47:13,872 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,872 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2019-11-05 18:47:13,879 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,879 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2019-11-05 18:47:13,887 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,887 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2019-11-05 18:47:13,899 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,900 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2019-11-05 18:47:13,905 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,905 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2019-11-05 18:47:13,915 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,916 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2019-11-05 18:47:13,931 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,932 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2019-11-05 18:47:13,937 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,938 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2019-11-05 18:47:13,944 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,944 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2019-11-05 18:47:13,950 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,953 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2019-11-05 18:47:13,965 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,966 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2019-11-05 18:47:13,975 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,975 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2019-11-05 18:47:13,979 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,979 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2019-11-05 18:47:13,988 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,988 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2019-11-05 18:47:13,997 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:13,998 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2019-11-05 18:47:14,003 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,005 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2019-11-05 18:47:14,012 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,013 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2019-11-05 18:47:14,018 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,018 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2019-11-05 18:47:14,027 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,028 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2019-11-05 18:47:14,035 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,036 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2019-11-05 18:47:14,043 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,043 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2019-11-05 18:47:14,051 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,051 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2019-11-05 18:47:14,065 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,071 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2019-11-05 18:47:14,074 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,077 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2019-11-05 18:47:14,084 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,085 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2019-11-05 18:47:14,092 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,092 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2019-11-05 18:47:14,099 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,100 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2019-11-05 18:47:14,129 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,129 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2019-11-05 18:47:14,135 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,136 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2019-11-05 18:47:14,144 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,144 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2019-11-05 18:47:14,149 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,151 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2019-11-05 18:47:14,156 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,157 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2019-11-05 18:47:14,160 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,160 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2019-11-05 18:47:14,166 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,166 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2019-11-05 18:47:14,176 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:14,177 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2019-11-05 18:47:14,889 [INFO] BoardConnectionPanel:220 - [DDR PANEL] osNameString: Windows
+2019-11-05 18:47:15,248 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2019-11-05 18:47:15,250 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2019-11-05 18:47:15,685 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-05 18:47:16,217 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-05 18:47:16,259 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-05 18:47:16,259 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-05 18:47:16,262 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-05 18:47:16,264 [ERROR] IntegrityCheckThread:230 - Cannot obtain thirdParties list 21
+2019-11-05 18:47:16,264 [ERROR] IntegrityCheckThread:99 - Unexpected exception IntegrityCheckThread Thread: Updater error
+2019-11-05 18:47:16,265 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/hatri/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-11-05 18:47:16,269 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2019-11-05 18:47:16,270 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.1.0.201910081157\tools\bin
+2019-11-05 18:47:16,284 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.1.0.201910081157\tools\bin\STM32_Programmer_CLI.exe -l
+2019-11-05 18:47:16,487 [INFO] MainDdrPanel:90 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.1.0.201910081157\tools\bin
+2019-11-05 18:47:16,500 [INFO] Updater:886 - Updater Version found : 5.4.0
+2019-11-05 18:47:16,531 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541
+2019-11-05 18:47:16,583 [INFO] MainUpdater:452 - Copy updater definitions from MX database
+2019-11-05 18:47:18,842 [INFO] MainUpdater:2232 - connection check result : 10
+2019-11-05 18:47:18,842 [INFO] MainUpdater:2859 - Updater definition file requires update
+2019-11-05 18:47:18,850 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2019-11-05 18:47:18,853 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-05 18:47:20,350 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2019-11-05 18:47:20,388 [INFO] FileExtend:210 - Unzip File : updaters.zip
+2019-11-05 18:47:20,388 [INFO] FileExtend:225 - Standard Zip Deflate
+2019-11-05 18:47:23,578 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2019-11-05 18:47:24,470 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2019-11-05 18:47:24,858 [INFO] LoadServerUpdatesThread:287 - End of LoadServerUpdate Thread
+2019-11-05 18:47:24,924 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2019-11-05 18:47:25,018 [INFO] MainUpdater:2232 - connection check result : 10
+2019-11-05 18:47:25,021 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-05 18:47:25,161 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-11-05 18:47:25,162 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-05 18:47:25,168 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-05 18:47:25,169 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 163410600 Bytes (648019968)
+2019-11-05 18:47:25,169 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-11-05 18:47:25,170 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-05 18:47:25,171 [INFO] OpenFileManager:269 - Change cursor
+2019-11-05 18:47:33,696 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-05 18:47:33,698 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDIOFreq_Value) has invalid value (96000000)
+2019-11-05 18:47:33,698 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (96000000)
+2019-11-05 18:47:35,484 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 495512592 Bytes (648019968)
+2019-11-05 18:47:35,511 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/hatri/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 13 ms. number of Sw pack : 9
+2019-11-05 18:47:35,627 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-05 18:47:35,628 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-05 18:47:35,628 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-05 18:47:35,628 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.1
+2019-11-05 18:47:35,628 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-05 18:47:35,628 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-05 18:47:35,628 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-05 18:47:35,628 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-05 18:47:35,628 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2019-11-05 18:47:36,102 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-05 18:47:36,104 [INFO] PinOutPanel:1367 - setPackage(STM32F446RETx,LQFP64)
+2019-11-05 18:47:36,810 [INFO] UtilMem:74 - Before build in PCC Used Memory: 251662176 Bytes (648019968)
+2019-11-05 18:47:37,407 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/hatri/.stm32cubemx/plugins/power
+2019-11-05 18:47:37,409 [INFO] UtilMem:74 - After build in PCC Used Memory: 267390816 Bytes (648019968)
+2019-11-05 18:47:37,436 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 18:47:37,436 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,436 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,436 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,436 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,436 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,436 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,440 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,440 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,441 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,441 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,441 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,442 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,442 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,443 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,443 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,443 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,444 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,444 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,445 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,445 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,445 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,445 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,445 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,445 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,448 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,449 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,449 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,450 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,450 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,450 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,451 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,452 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,452 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,452 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,453 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,453 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,454 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,454 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,455 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,455 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,456 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,456 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,457 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,457 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,457 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,458 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,458 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,458 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,459 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,459 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,460 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,461 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,462 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,462 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,463 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,463 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,464 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,465 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,466 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,467 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 18:47:37,506 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 18:47:37,533 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2019-11-05 18:47:37,709 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-05 18:47:37,726 [INFO] DbMcusXml:106 - Load MCU database from C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/families.xml
+2019-11-05 18:47:37,948 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 18:47:38,021 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 18:47:38,607 [INFO] DbMcusJson:87 - JSON generation date=Mon Sep 23 04:35:45 CDT 2019 (1569231345)
+2019-11-05 18:47:39,803 [INFO] DbMcus:193 - Found 1544 MCUs (1504 are supported by CubeMX, 1504 are visible in CubeMX)
+2019-11-05 18:47:39,803 [INFO] ApiDb:147 - User favorites file not found: C:\Users\hatri/.stm32cubemx/favorites.mcus.txt
+2019-11-05 18:47:39,803 [INFO] DbMcus:204 - Set 0 / 0 favorites MCUs
+2019-11-05 18:47:44,212 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 18:48:01,098 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 454916672 Bytes (728760320)
+2019-11-05 18:48:02,901 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 463305280 Bytes (728760320)
+2019-11-05 18:48:03,229 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 531462720 Bytes (728760320)
+2019-11-05 18:48:03,746 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-05 18:48:03,746 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-05 18:48:03,747 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-05 18:48:03,747 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-11-05 18:48:03,747 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-11-05 18:48:03,747 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-11-05 18:48:03,747 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: USART
+2019-11-05 18:48:03,748 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-11-05 18:48:03,750 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-11-05 18:48:04,332 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp_save
+2019-11-05 18:48:04,793 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp
+2019-11-05 18:48:04,948 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp_save
+2019-11-05 18:48:05,095 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp
+2019-11-05 18:48:05,454 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-05 18:48:05,455 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-05 18:48:05,456 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-05 18:48:05,457 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-05 18:48:05,461 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-11-05 18:48:05,462 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-05 18:48:05,465 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-05 18:48:05,466 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-05 18:48:05,467 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-05 18:48:05,468 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-05 18:48:05,468 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-05 18:48:05,490 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c_save
+2019-11-05 18:48:05,789 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c
+2019-11-05 18:48:05,812 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h_save
+2019-11-05 18:48:05,969 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h
+2019-11-05 18:48:06,005 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c_save
+2019-11-05 18:48:06,237 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c
+2019-11-05 18:48:06,251 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp_save
+2019-11-05 18:48:06,362 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp
+2019-11-05 18:48:06,378 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h_save
+2019-11-05 18:48:06,551 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h
+2019-11-05 18:48:06,589 [WARN] IPConfigManager:2673 - IP not found : TIM
+2019-11-05 18:48:06,589 [WARN] IPConfigManager:2673 - IP not found : gpio
+2019-11-05 18:48:06,591 [WARN] CodeGenerator:2697 - IP not found : TIM
+2019-11-05 18:48:06,591 [WARN] CodeGenerator:2697 - IP not found : gpio
+2019-11-05 18:48:06,605 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h_save
+2019-11-05 18:48:06,803 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h
+2019-11-05 18:48:06,829 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c_save
+2019-11-05 18:48:07,126 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c
+2019-11-05 18:48:08,064 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 361mS.
+2019-11-05 18:48:08,074 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-11-05 18:48:08,741 [INFO] ConfigFileManager:953 - The Die is : DIE421
+2019-11-05 18:48:11,631 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 3557mS.
+2019-11-05 18:48:11,632 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 1mS.
+2019-11-05 18:48:11,642 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-11-05 19:04:55,956 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 19:14:06,020 [INFO] MainUpdater:2232 - connection check result : 10
+2019-11-05 19:14:06,025 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-05 19:14:06,194 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-11-05 19:14:06,195 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-05 19:14:06,199 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-05 19:14:06,205 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 303031536 Bytes (765460480)
+2019-11-05 19:14:06,206 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-11-05 19:14:06,206 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-05 19:14:06,206 [INFO] OpenFileManager:269 - Change cursor
+2019-11-05 19:14:06,222 [INFO] RulesReader:52 - Compatibility file has been processed (179 Rules)
+2019-11-05 19:14:37,657 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-05 19:14:37,659 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDIOFreq_Value) has invalid value (96000000)
+2019-11-05 19:14:37,659 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (96000000)
+2019-11-05 19:14:51,847 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 264821904 Bytes (765460480)
+2019-11-05 19:14:51,884 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-05 19:14:51,885 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-05 19:14:51,885 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-05 19:14:51,885 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.1
+2019-11-05 19:14:51,885 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-05 19:14:51,885 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-05 19:14:51,885 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-05 19:14:51,885 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-05 19:14:51,885 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2019-11-05 19:14:52,062 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-05 19:14:52,066 [INFO] PinOutPanel:1367 - setPackage(STM32F446RETx,LQFP64)
+2019-11-05 19:14:52,390 [INFO] UtilMem:74 - Before build in PCC Used Memory: 362809312 Bytes (765460480)
+2019-11-05 19:14:52,521 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/hatri/.stm32cubemx/plugins/power
+2019-11-05 19:14:52,521 [INFO] UtilMem:74 - After build in PCC Used Memory: 372246496 Bytes (765460480)
+2019-11-05 19:14:52,529 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 19:14:52,529 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,529 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,529 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,529 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,529 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,529 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,530 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,530 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,530 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,530 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,530 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,530 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,530 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,531 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,531 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,531 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,531 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,531 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,531 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,531 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,531 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,532 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,532 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,532 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,532 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,532 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,532 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,533 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,533 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,533 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,533 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,533 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,533 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,534 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,534 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,534 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,534 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,534 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,536 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,536 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,536 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,537 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,537 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,537 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,537 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,537 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,537 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,537 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,537 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,537 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,539 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,539 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,539 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,539 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,540 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,540 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,540 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,540 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,540 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,540 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-05 19:14:52,544 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 19:14:52,569 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-05 19:14:52,687 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 19:14:52,710 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 19:15:13,179 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 19:15:19,379 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 469764064 Bytes (765460480)
+2019-11-05 19:15:20,823 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 478152672 Bytes (765460480)
+2019-11-05 19:15:21,143 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 488638432 Bytes (765460480)
+2019-11-05 19:15:21,307 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-05 19:15:21,307 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-05 19:15:21,308 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-05 19:15:21,308 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-11-05 19:15:21,308 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-11-05 19:15:21,308 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-11-05 19:15:21,308 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: USART
+2019-11-05 19:15:21,308 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-11-05 19:15:21,309 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-11-05 19:15:21,517 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp_save
+2019-11-05 19:15:21,587 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp
+2019-11-05 19:15:21,617 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp_save
+2019-11-05 19:15:21,729 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp
+2019-11-05 19:15:21,931 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-05 19:15:21,932 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-05 19:15:21,933 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-05 19:15:21,935 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-05 19:15:21,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-11-05 19:15:21,938 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-05 19:15:21,941 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-05 19:15:21,943 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-05 19:15:21,945 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-05 19:15:21,948 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-05 19:15:21,949 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-05 19:15:21,965 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c_save
+2019-11-05 19:15:22,086 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c
+2019-11-05 19:15:22,096 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h_save
+2019-11-05 19:15:22,197 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h
+2019-11-05 19:15:22,214 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c_save
+2019-11-05 19:15:22,377 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c
+2019-11-05 19:15:22,383 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp_save
+2019-11-05 19:15:22,441 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp
+2019-11-05 19:15:22,449 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h_save
+2019-11-05 19:15:22,590 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h
+2019-11-05 19:15:22,605 [WARN] IPConfigManager:2673 - IP not found : TIM
+2019-11-05 19:15:22,605 [WARN] IPConfigManager:2673 - IP not found : gpio
+2019-11-05 19:15:22,606 [WARN] CodeGenerator:2697 - IP not found : TIM
+2019-11-05 19:15:22,607 [WARN] CodeGenerator:2697 - IP not found : gpio
+2019-11-05 19:15:22,611 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h_save
+2019-11-05 19:15:22,706 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h
+2019-11-05 19:15:22,719 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c_save
+2019-11-05 19:15:22,994 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c
+2019-11-05 19:15:23,789 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 289mS.
+2019-11-05 19:15:23,792 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-11-05 19:15:24,432 [INFO] ConfigFileManager:953 - The Die is : DIE421
+2019-11-05 19:15:26,051 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 2259mS.
+2019-11-05 19:15:26,053 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-11-05 19:15:26,063 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-11-05 19:15:33,813 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-05 19:17:31,628 [INFO] MainUpdater:2232 - connection check result : 10
+2019-11-05 19:17:31,633 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-05 19:17:31,801 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-11-05 19:17:31,801 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-05 19:17:31,807 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-05 19:17:31,814 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 421188360 Bytes (782237696)
+2019-11-05 19:17:31,816 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-11-05 19:17:31,817 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-05 19:17:31,818 [INFO] OpenFileManager:269 - Change cursor
+2019-11-05 19:17:31,838 [INFO] RulesReader:52 - Compatibility file has been processed (179 Rules)
+2019-11-05 19:18:02,441 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-05 19:18:02,441 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDIOFreq_Value) has invalid value (96000000)
+2019-11-05 19:18:02,441 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (96000000)
+2019-11-06 08:08:32,297 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] java.io.IOException: 
+2019-11-06 08:08:32,299 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.serial.SerialPort.getPortName(Native Method)
+2019-11-06 08:08:32,300 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.serial.SerialPort.list(SerialPort.java:265)
+2019-11-06 08:08:32,303 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mpu.remote.serial.internal.SerialPortProviderWindows.run(SerialPortProviderWindows.java:107)
+2019-11-06 08:08:32,305 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.util.TimerThread.mainLoop(Timer.java:555)
+2019-11-06 08:08:32,307 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.util.TimerThread.run(Timer.java:505)
+2019-11-06 08:08:37,571 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 483659920 Bytes (782237696)
+2019-11-06 08:08:37,640 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-06 08:08:37,642 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-06 08:08:37,642 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-06 08:08:37,642 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.1
+2019-11-06 08:08:37,642 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-06 08:08:37,642 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-06 08:08:37,642 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-06 08:08:37,642 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-06 08:08:37,642 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2019-11-06 08:08:38,044 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-06 08:08:38,046 [INFO] PinOutPanel:1367 - setPackage(STM32F446RETx,LQFP64)
+2019-11-06 08:08:38,553 [INFO] UtilMem:74 - Before build in PCC Used Memory: 564868064 Bytes (782237696)
+2019-11-06 08:08:38,753 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/hatri/.stm32cubemx/plugins/power
+2019-11-06 08:08:38,753 [INFO] UtilMem:74 - After build in PCC Used Memory: 574305248 Bytes (782237696)
+2019-11-06 08:08:38,765 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,773 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,773 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,773 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,775 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,783 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,783 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,783 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,783 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,785 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,793 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,793 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,793 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-06 08:08:38,795 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 08:08:38,846 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-06 08:08:39,158 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 08:08:39,191 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 08:10:07,889 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 08:10:10,861 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 08:10:13,172 [INFO] DbMcusDocs:126 - JSON generation date=Mon Sep 23 04:35:45 CDT 2019 (1569231345)
+2019-11-06 08:10:13,262 [INFO] DbMcusDocs:61 - Found 525 MCUs documents
+2019-11-06 08:10:19,023 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 08:10:25,916 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 08:10:36,470 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 623904368 Bytes (782237696)
+2019-11-06 08:10:37,712 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 632292976 Bytes (782237696)
+2019-11-06 08:10:37,971 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 282580168 Bytes (782237696)
+2019-11-06 08:10:38,206 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-06 08:10:38,206 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-06 08:10:38,206 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-06 08:10:38,216 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-11-06 08:10:38,216 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-11-06 08:10:38,216 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-11-06 08:10:38,216 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: USART
+2019-11-06 08:10:38,216 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-11-06 08:10:38,216 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-11-06 08:10:38,494 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp_save
+2019-11-06 08:10:38,564 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp
+2019-11-06 08:10:38,594 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp_save
+2019-11-06 08:10:38,664 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp
+2019-11-06 08:10:38,764 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-06 08:10:38,764 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-06 08:10:38,764 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 08:10:38,764 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-06 08:10:38,764 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-11-06 08:10:38,764 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 08:10:38,774 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-06 08:10:38,774 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-06 08:10:38,774 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 08:10:38,774 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-06 08:10:38,774 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 08:10:38,794 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c_save
+2019-11-06 08:10:38,954 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c
+2019-11-06 08:10:38,964 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h_save
+2019-11-06 08:10:39,064 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h
+2019-11-06 08:10:39,084 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c_save
+2019-11-06 08:10:39,214 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c
+2019-11-06 08:10:39,224 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp_save
+2019-11-06 08:10:39,294 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp
+2019-11-06 08:10:39,304 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h_save
+2019-11-06 08:10:39,394 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h
+2019-11-06 08:10:39,414 [WARN] IPConfigManager:2673 - IP not found : TIM
+2019-11-06 08:10:39,414 [WARN] IPConfigManager:2673 - IP not found : gpio
+2019-11-06 08:10:39,414 [WARN] CodeGenerator:2697 - IP not found : TIM
+2019-11-06 08:10:39,414 [WARN] CodeGenerator:2697 - IP not found : gpio
+2019-11-06 08:10:39,424 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h_save
+2019-11-06 08:10:39,564 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h
+2019-11-06 08:10:39,584 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c_save
+2019-11-06 08:10:39,764 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c
+2019-11-06 08:10:40,518 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 230mS.
+2019-11-06 08:10:40,518 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-11-06 08:10:40,748 [INFO] ConfigFileManager:953 - The Die is : DIE421
+2019-11-06 08:10:42,488 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 1970mS.
+2019-11-06 08:10:42,488 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-11-06 08:10:42,488 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-11-06 08:54:14,729 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 08:54:14,759 [INFO] Gpio:245 - dependency for GPIO [RCC, USART2]
+2019-11-06 09:00:53,315 [INFO] Gpio:245 - dependency for GPIO [RCC, USART2]
+2019-11-06 09:00:53,325 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 09:01:16,902 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 609289264 Bytes (896532480)
+2019-11-06 09:01:18,102 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 620556472 Bytes (896532480)
+2019-11-06 09:01:18,282 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 631632680 Bytes (896532480)
+2019-11-06 09:01:18,442 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-06 09:01:18,442 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-06 09:01:18,442 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-06 09:01:18,442 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-11-06 09:01:18,442 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-11-06 09:01:18,442 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-11-06 09:01:18,442 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: USART
+2019-11-06 09:01:18,442 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-11-06 09:01:18,442 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-11-06 09:01:18,612 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp_save
+2019-11-06 09:01:18,702 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp
+2019-11-06 09:01:18,802 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp_save
+2019-11-06 09:01:18,872 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp
+2019-11-06 09:01:18,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-06 09:01:18,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-06 09:01:18,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 09:01:18,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-06 09:01:18,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-11-06 09:01:18,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 09:01:18,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-06 09:01:18,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-06 09:01:18,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 09:01:18,962 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-06 09:01:18,962 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 09:01:18,962 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c_save
+2019-11-06 09:01:19,062 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c
+2019-11-06 09:01:19,072 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h_save
+2019-11-06 09:01:19,142 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h
+2019-11-06 09:01:19,162 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c_save
+2019-11-06 09:01:19,322 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c
+2019-11-06 09:01:19,332 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp_save
+2019-11-06 09:01:19,412 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp
+2019-11-06 09:01:19,422 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h_save
+2019-11-06 09:01:19,532 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h
+2019-11-06 09:01:19,542 [WARN] IPConfigManager:2673 - IP not found : TIM
+2019-11-06 09:01:19,542 [WARN] IPConfigManager:2673 - IP not found : gpio
+2019-11-06 09:01:19,552 [WARN] CodeGenerator:2697 - IP not found : TIM
+2019-11-06 09:01:19,552 [WARN] CodeGenerator:2697 - IP not found : gpio
+2019-11-06 09:01:19,552 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h_save
+2019-11-06 09:01:19,642 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h
+2019-11-06 09:01:19,652 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c_save
+2019-11-06 09:01:19,802 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c
+2019-11-06 09:01:20,392 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 210mS.
+2019-11-06 09:01:20,392 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-11-06 09:01:20,872 [INFO] ConfigFileManager:953 - The Die is : DIE421
+2019-11-06 09:01:22,152 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 1760mS.
+2019-11-06 09:01:22,152 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-11-06 09:01:22,162 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-11-06 09:04:42,271 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 10:58:46,551 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 10:58:48,899 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 10:58:57,876 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 580081856 Bytes (932184064)
+2019-11-06 10:58:58,899 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 591179144 Bytes (932184064)
+2019-11-06 10:58:59,117 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 602536256 Bytes (932184064)
+2019-11-06 10:58:59,284 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-06 10:58:59,285 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-06 10:58:59,285 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-06 10:58:59,285 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-11-06 10:58:59,285 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-11-06 10:58:59,286 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-11-06 10:58:59,286 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: USART
+2019-11-06 10:58:59,286 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-11-06 10:58:59,287 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-11-06 10:58:59,489 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp_save
+2019-11-06 10:58:59,569 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp
+2019-11-06 10:58:59,587 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp_save
+2019-11-06 10:58:59,675 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp
+2019-11-06 10:58:59,765 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-06 10:58:59,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-06 10:58:59,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 10:58:59,768 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-06 10:58:59,769 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-11-06 10:58:59,770 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 10:58:59,772 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-06 10:58:59,773 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-06 10:58:59,774 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 10:58:59,775 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-06 10:58:59,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-06 10:58:59,784 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c_save
+2019-11-06 10:58:59,889 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c
+2019-11-06 10:58:59,899 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h_save
+2019-11-06 10:59:00,080 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h
+2019-11-06 10:59:00,092 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c_save
+2019-11-06 10:59:00,223 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c
+2019-11-06 10:59:00,232 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp_save
+2019-11-06 10:59:00,316 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp
+2019-11-06 10:59:00,323 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h_save
+2019-11-06 10:59:00,424 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h
+2019-11-06 10:59:00,443 [WARN] IPConfigManager:2673 - IP not found : TIM
+2019-11-06 10:59:00,444 [WARN] IPConfigManager:2673 - IP not found : gpio
+2019-11-06 10:59:00,445 [WARN] CodeGenerator:2697 - IP not found : TIM
+2019-11-06 10:59:00,445 [WARN] CodeGenerator:2697 - IP not found : gpio
+2019-11-06 10:59:00,453 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h_save
+2019-11-06 10:59:00,554 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h
+2019-11-06 10:59:00,562 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c_save
+2019-11-06 10:59:00,673 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c
+2019-11-06 10:59:01,517 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 182mS.
+2019-11-06 10:59:01,520 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-11-06 10:59:01,733 [INFO] ConfigFileManager:953 - The Die is : DIE421
+2019-11-06 10:59:03,072 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 1552mS.
+2019-11-06 10:59:03,073 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 1mS.
+2019-11-06 10:59:03,080 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-11-06 10:59:04,785 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 10:59:08,068 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 10:59:09,916 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-06 23:43:53,576 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] java.io.IOException: 
+2019-11-06 23:43:53,579 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.serial.SerialPort.getPortName(Native Method)
+2019-11-06 23:43:53,582 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.cdt.serial.SerialPort.list(SerialPort.java:265)
+2019-11-06 23:43:53,587 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mpu.remote.serial.internal.SerialPortProviderWindows.run(SerialPortProviderWindows.java:107)
+2019-11-06 23:43:53,600 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.util.TimerThread.mainLoop(Timer.java:555)
+2019-11-06 23:43:53,604 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.util.TimerThread.run(Timer.java:505)
+2019-11-09 13:15:27,288 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-09 13:15:32,621 [INFO] NvicIntPanel:88 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x420,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2019-11-09 13:15:38,373 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-09 13:15:54,059 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 502384040 Bytes (932184064)
+2019-11-09 13:15:55,788 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 512234032 Bytes (932184064)
+2019-11-09 13:15:55,986 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 523331968 Bytes (932184064)
+2019-11-09 13:15:56,178 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-09 13:15:56,178 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-09 13:15:56,178 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-09 13:15:56,178 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-11-09 13:15:56,178 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-11-09 13:15:56,178 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-11-09 13:15:56,178 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: USART
+2019-11-09 13:15:56,178 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-11-09 13:15:56,180 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-11-09 13:15:56,386 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp_save
+2019-11-09 13:15:56,483 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp
+2019-11-09 13:15:56,512 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp_save
+2019-11-09 13:15:56,577 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp
+2019-11-09 13:15:56,661 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-09 13:15:56,663 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-09 13:15:56,664 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-09 13:15:56,666 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-09 13:15:56,668 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-11-09 13:15:56,669 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-09 13:15:56,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-09 13:15:56,671 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-09 13:15:56,672 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-09 13:15:56,675 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-09 13:15:56,675 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-09 13:15:56,684 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c_save
+2019-11-09 13:15:56,779 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c
+2019-11-09 13:15:56,787 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h_save
+2019-11-09 13:15:56,856 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h
+2019-11-09 13:15:56,871 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c_save
+2019-11-09 13:15:57,020 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c
+2019-11-09 13:15:57,028 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp_save
+2019-11-09 13:15:57,100 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp
+2019-11-09 13:15:57,111 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h_save
+2019-11-09 13:15:57,180 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h
+2019-11-09 13:15:57,198 [WARN] IPConfigManager:2673 - IP not found : TIM
+2019-11-09 13:15:57,199 [WARN] IPConfigManager:2673 - IP not found : gpio
+2019-11-09 13:15:57,200 [WARN] CodeGenerator:2697 - IP not found : TIM
+2019-11-09 13:15:57,200 [WARN] CodeGenerator:2697 - IP not found : gpio
+2019-11-09 13:15:57,206 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h_save
+2019-11-09 13:15:57,446 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h
+2019-11-09 13:15:57,455 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c_save
+2019-11-09 13:15:57,622 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c
+2019-11-09 13:15:58,270 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 221mS.
+2019-11-09 13:15:58,273 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-11-09 13:15:58,525 [INFO] ConfigFileManager:953 - The Die is : DIE421
+2019-11-09 13:15:59,951 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 1678mS.
+2019-11-09 13:15:59,952 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 1mS.
+2019-11-09 13:15:59,958 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-11-09 13:18:10,638 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-09 13:22:26,136 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-09 13:22:26,142 [INFO] Gpio:245 - dependency for GPIO [RCC, USART2]
+2019-11-09 13:34:43,123 [INFO] Gpio:245 - dependency for GPIO [RCC, USART2]
+2019-11-09 13:34:43,132 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-09 13:34:51,276 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 865645592 Bytes (1029701632)
+2019-11-09 13:34:52,274 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 876840816 Bytes (1029701632)
+2019-11-09 13:34:52,583 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 380780832 Bytes (1029701632)
+2019-11-09 13:34:52,775 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-09 13:34:52,775 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-09 13:34:52,775 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8
+2019-11-09 13:34:52,776 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-11-09 13:34:52,776 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-11-09 13:34:52,776 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-11-09 13:34:52,776 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: USART
+2019-11-09 13:34:52,776 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-11-09 13:34:52,777 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-11-09 13:34:52,970 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp_save
+2019-11-09 13:34:53,062 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\license.tmp
+2019-11-09 13:34:53,089 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp_save
+2019-11-09 13:34:53,160 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\gpio.tmp
+2019-11-09 13:34:53,246 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-09 13:34:53,247 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-09 13:34:53,248 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-09 13:34:53,249 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-09 13:34:53,250 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-11-09 13:34:53,251 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-09 13:34:53,253 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-09 13:34:53,254 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-09 13:34:53,254 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-09 13:34:53,256 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-09 13:34:53,257 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-09 13:34:53,265 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c_save
+2019-11-09 13:34:53,377 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_it.c
+2019-11-09 13:34:53,386 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h_save
+2019-11-09 13:34:53,457 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_it.h
+2019-11-09 13:34:53,470 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c_save
+2019-11-09 13:34:53,597 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\stm32f4xx_hal_msp.c
+2019-11-09 13:34:53,606 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp_save
+2019-11-09 13:34:53,685 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\MXTmpFiles\system.tmp
+2019-11-09 13:34:53,696 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h_save
+2019-11-09 13:34:53,788 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\stm32f4xx_hal_conf.h
+2019-11-09 13:34:53,808 [WARN] IPConfigManager:2673 - IP not found : TIM
+2019-11-09 13:34:53,808 [WARN] IPConfigManager:2673 - IP not found : gpio
+2019-11-09 13:34:53,809 [WARN] CodeGenerator:2697 - IP not found : TIM
+2019-11-09 13:34:53,809 [WARN] CodeGenerator:2697 - IP not found : gpio
+2019-11-09 13:34:53,817 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h_save
+2019-11-09 13:34:53,894 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Inc\main.h
+2019-11-09 13:34:53,905 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c_save
+2019-11-09 13:34:54,078 [INFO] CodeEngine:211 - Generated code: C:\Users\hatri\OneDrive - Milwaukee School of Engineering\Networking 1 (2019)\Project_Working\Networking_1_Project_C\Networking1\Core\Src\main.c
+2019-11-09 13:34:54,715 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 176mS.
+2019-11-09 13:34:54,717 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-11-09 13:34:55,570 [INFO] ConfigFileManager:953 - The Die is : DIE421
+2019-11-09 13:34:57,057 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 2340mS.
+2019-11-09 13:34:57,059 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 1mS.
+2019-11-09 13:34:57,065 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
